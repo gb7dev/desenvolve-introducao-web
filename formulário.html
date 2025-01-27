@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <title>Formulário de pesquisa de satisfação</title>
+</head>
+<body>
+    <h1>Pesquisa de satisfação</h1>
+    <form method="post" action="processar-pesquisa.html">
+        <section>
+            <h2>Dados pessoais</h2>
+            <P>
+             <label for="nome">Nome: </label>
+             <input type="nome" id="nome"/>
+            </P>
+            <P>
+             <label for="e-mail">E-mail: </label>
+             <input type="e-mail" id="e-mail" placeholder="Digite seu e-mail"/>
+            </P>
+            <P>
+             <label for="tel">Telefone: </label>
+             <input type="tel" id="tel"/>
+            </P>
+        </section>
+        <section>
+            <h2>Dados de pesquisa</h2>
+            <p>
+             <label for="Área de dúvida">Área de dúvida</label>
+             <select>
+                 <option>Logística</option>
+                 <option>Fianceiro</option>
+                 <option>Educacional</option>
+                 <option>Comercial</option>
+             </select>
+            </p>
+            <p>
+             Avalie o serviço prestado em uma escala de 1a5, sendo 1 muito ruim e 5 muito bom:
+             <label for="1">1</label>
+             <input type="radio" id="1" name="avaliação"/>
+             <label for="2">2</label>
+             <input type="radio" id="2" name="avaliação"/>
+             <label for="3">3</label>
+             <input type="radio" id="3" name="avaliação"/>
+             <label for="4">4</label>
+             <input type="radio" id="4" name="avaliação"/>
+             <label for="5">5</label>
+             <input type="radio" id="5" name="avaliação"/>
+            </p>
+            <p>
+             O problema foi solucionado:
+             <label for="Sim">Sim</label>
+             <input type="radio" id="Sim" name="solução"/>
+             <label for="Não">Não</label>
+             <input type="radio" id="Não" name="solução"/>
+             <label for="Incompleto">Incompleto</label>
+             <input type="radio" id="Incompleto" name="solução"/>
+            </p>
+            <p>
+                <label for="compartilhar-informações">Estou ciente que a empresa pode compartilhar minhas informações com segurança</label>
+                <input type="checkbox" id="compartilhar-informações"/>
+            </p>    
+        </section>
+        <input type="submit" value="Enviar"/>
+    </form>
+</body>
